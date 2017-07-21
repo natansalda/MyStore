@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_toast_sale"
+    style="@style/RelativeDefault">
+
+    <TextView
+        android:id="@+id/infoTextToast"
+        style="@style/ToastSearch"
+        android:text="@string/aviso_mercancia">
+
+    </TextView>
+
+    <ImageView
+        style="@style/ImageToastSearch"
+        android:background="@drawable/background_stock"
+        android:src="@drawable/provider">
+
+    </ImageView>
+
+</RelativeLayout>

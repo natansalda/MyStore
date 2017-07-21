@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollView">
+
+    <RelativeLayout style="@style/RelativeDefault">
+
+        <TextView
+            android:id="@+id/nombre_producto_tv"
+            style="@style/TextScreenGallery"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/product" />
+
+        <TextView
+            android:id="@+id/tv_name_product"
+            style="@style/InfoTextScreenGallery"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/nombre_producto_tv"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/provider"
+            style="@style/TextScreenGallery"
+            android:layout_below="@id/tv_name_product"
+            android:text="@string/provider" />
+
+        <TextView
+            android:id="@+id/textview_text_provider"
+            style="@style/InfoTextScreenGallery"
+            android:layout_below="@id/tv_name_product"
+            android:layout_toRightOf="@id/provider"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/product_price"
+            style="@style/TextScreenGallery"
+            android:layout_below="@id/provider"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="4dp"
+            android:text="Price: " />
+
+        <TextView
+            android:id="@+id/textview_text_price"
+            style="@style/InfoTextScreenGallery"
+            android:layout_below="@id/textview_text_provider"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/product_price"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_view_sale"
+            style="@style/TextScreenGallery"
+            android:layout_below="@id/product_price"
+            android:layout_marginTop="10dp"
+            android:text="@string/product_sale"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/sales_product"
+            style="@style/InfoTextScreenGallery"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/product_price"
+            android:layout_marginTop="10dp" />
+
+        <View
+            android:id="@+id/view_cantidad"
+            style="@style/ViewAmount" />
+
+        <TextView
+            android:id="@+id/amount_product"
+            style="@style/MovingText" />
+
+        <Button
+            android:id="@+id/restar_stock"
+            style="@style/AmountButton"
+            android:text="@string/rest" />
+
+        <Button
+            android:id="@+id/sumar_stock"
+            style="@style/AmountButton"
+            android:layout_alignParentRight="true"
+            android:text="@string/sum" />
+
+        <EditText
+            android:id="@+id/quantity"
+            style="@style/EditTextAmountGallery" />
+
+        <ImageView
+            android:id="@+id/request_item"
+            style="@style/ProviderIcon" />
+
+        <View
+            android:id="@+id/view_img_superior"
+            style="@style/ViewImageTop" />
+
+        <ImageView
+            android:id="@+id/image_product"
+            style="@style/FotoGalleryForProducts"
+            android:onClick="notifyImageChange" />
+
+        <View style="@style/ViewInsideFotoProduct" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">MyStore</string>
+    <string name="activity_new_product">New Product</string>
+    <string name="activity_store">Store</string>
+    <string name="empty_stock">There is nothing in stock.</string>
+    <string name="title_activity_new_product">New Product</string>
+    <string name="action_settings">Settings</string>
+    <string name="missing">Missing fields to fill before saving</string>
+    <string name="error_save_changes">Failed to save changes</string>
+    <string name="modified">Product modified correctly</string>
+    <string name="added">Product added correctly</string>
+    <string name="title_activity_modify_product">Modify product data</string>
+    <string name="discard_changes_msg">Discard changes</string>
+    <string name="discard">Discard</string>
+    <string name="continue_editing">Continue Editing</string>
+    <string name="delete_dialog_msg">Delete this product?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="product_deleted">Product deleted.</string>
+    <string name="error_deleting">Error in deleting product</string>
+    <string name="stock_updated">Stock Correctly Updated</string>
+    <string name="error_stock">Error Updating Stock</string>
+    <string name="soon">COMING SOON, Thanks for your patience</string>
+    <string name="delete_all_entry">ARE YOU SURE YOU WANT TO DELETE ALL PRODUCTS?</string>
+    <string name="stock_empty">There is nothing left in stock</string>
+    <string name="producto_nuevo">Hola, ¿has visto todas las novedades que que nos han llegado?, mira este producto, está genial, seguro te encantará. ¡Ven a verlo!. :)</string>
+    <string name="titulo_activity_product_management">Manage</string>
+    <string name="updated_stock">Remember to save updated store stock before exiting</string>
+    <string name="request_goods">Do you want to order goods from the provider?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="order_quantity">Order quantity:</string>
+    <string name="stock">Stock:</string>
+    <string name="dummy_data">Add dummy data</string>
+    <string name="delete_all">Delete all</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_modify">Edit products</string>
+    <string name="action_share">Share</string>
+    <string name="permision">We need permission to access the images on your device.</string>
+    <string name="notify_dummy_data">Fictitious product added</string>
+    <string name="text_empty_view">THE STORE IS EMPTY, ADD NEW PRODUCTS CLICKING A BUTTON</string>
+    <string name="info_cambio_foto">Click the image to change it</string>
+    <string name="texto_imagen_producto">Product Image</string>
+    <string name="nombre_producto">Product name:</string>
+    <string name="new_product" translatable="false">New Product</string>
+    <string name="precio_producto">Product price:</string>
+    <string name="hint_precio">1.75€</string>
+    <string name="provider">Provider:</string>
+    <string name="hint_proveedor" translatable="false">Provider</string>
+    <string name="cantidad">Cantidad: </string>
+    <string name="hint_cantidad" translatable="false">ex. 10</string>
+    <string name="product_sale">Product sale:</string>
+    <string name="product">Product:</string>
+    <string name="texto_cambiante">Stock Actual:</string>
+    <string name="rest" translatable="false">-</string>
+    <string name="sum" translatable="false">+</string>
+    <string name="text_change_image">\nTo change the image of the product select the icon</string>
+    <string name="aviso_mercancia">\nBe sure to request the goods from the supplier before changing the warehouse stock</string>
+    <string name="title_activity_add_producto">Add Product</string>
+    <string name="list_deleted">Full list deleted</string>
+</resources>

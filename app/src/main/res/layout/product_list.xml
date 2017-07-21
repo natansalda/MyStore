@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearListView">
+
+    <ImageView
+        android:id="@+id/product_foto"
+        style="@style/ImageProductListView" />
+
+    <View style="@style/ViewImageListView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/ProductNameListView" />
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/StockProductListView" />
+
+        <View
+            android:id="@+id/view1"
+            style="@style/ViewProductNameListView" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/ViewProductNameListView"
+            android:layout_below="@id/view1"
+            android:background="@color/colorStock" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/ProductPriceListView" />
+
+        <TextView
+            android:id="@+id/provider_product"
+            style="@style/ProviderListView" />
+
+        <TextView
+            android:id="@+id/text_view_sale"
+            style="@style/ProductSold" />
+
+        <ImageView
+            android:id="@+id/but_button"
+            style="@style/ButButton" />
+    </RelativeLayout>
+
+</LinearLayout>
