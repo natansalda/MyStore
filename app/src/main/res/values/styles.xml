@@ -47,7 +47,7 @@
         <item name="android:layout_below">@id/foto_empty_view</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textAppearance">
             @style/Base.TextAppearance.AppCompat.SearchResult.Title
         </item>
@@ -88,7 +88,7 @@
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:text">@string/info_cambio_foto</item>
     </style>
 
@@ -118,35 +118,33 @@
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:text">@string/texto_imagen_producto</item>
     </style>
 
     <style name="ProductName">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_below">@id/text_image_product</item>
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:paddingTop">16dp</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:text">@string/nombre_producto</item>
+        <item name="android:text">@string/product_name_text</item>
     </style>
 
     <style name="EditNameText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_below">@id/text_image_product</item>
-        <item name="android:layout_toRightOf">@id/nombre_producto_tv</item>
+        <item name="android:layout_toRightOf">@id/product_name_tv</item>
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:layout_marginTop">22dp</item>
         <item name="android:layout_marginRight">16dp</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:hint">@string/new_product</item>
         <item name="android:textColorHint">@color/colorHint</item>
@@ -158,12 +156,12 @@
     <style name="ProductPrice">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_below">@id/nombre_producto_tv</item>
+        <item name="android:layout_below">@id/product_name_tv</item>
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:layout_marginTop">32dp</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:text">@string/precio_producto</item>
     </style>
@@ -183,7 +181,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">textEnd</item>
         <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
     <style name="Provider">
@@ -194,7 +192,7 @@
         <item name="android:paddingTop">4dp</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:text">@string/provider</item>
     </style>
@@ -214,7 +212,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">textEnd</item>
         <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:maxLength">12</item>
     </style>
 
@@ -222,12 +220,11 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_below">@id/provider</item>
-        <item name="android:layout_margin">16dp</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:text">@string/cantidad</item>
+        <item name="android:text">@string/amount</item>
     </style>
 
     <style name="EditTextAmount">
@@ -245,13 +242,13 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">textEnd</item>
         <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
     <style name="TextScreenGallery">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorPrimary</item>
@@ -264,7 +261,7 @@
         <item name="android:gravity">end</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorAccent</item>
     </style>
 
@@ -283,12 +280,12 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:layout_below">@id/view_cantidad</item>
+        <item name="android:layout_below">@id/separator</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:text">@string/texto_cambiante</item>
+        <item name="android:text">@string/now_in_stock</item>
     </style>
 
     <style name="AmountButton">
@@ -372,7 +369,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:layout_marginTop">16dp</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorAppOscuro</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
@@ -404,7 +401,6 @@
     <style name="ProductPriceListView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_below">@id/product_name</item>
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:fontFamily">serif-monospace</item>
         <item name="android:textColor">@color/colorAccent</item>
@@ -429,7 +425,7 @@
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_marginBottom">4dp</item>
         <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textStyle">bold</item>5
         <item name="android:textSize">15sp</item>
@@ -454,7 +450,7 @@
         <item name="android:paddingBottom">50dp</item>
         <item name="android:layout_margin">16dp</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:background">@drawable/background_toast</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:text">@string/text_change_image</item>

@@ -122,10 +122,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_settings:
-                Toast.makeText(this, R.string.soon, Toast.LENGTH_SHORT)
-                        .show();
-                return true;
             case R.id.dummy_data:
                 addDummy();
                 return true;

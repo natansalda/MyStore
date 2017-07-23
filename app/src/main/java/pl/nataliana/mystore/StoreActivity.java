@@ -62,11 +62,12 @@ public class StoreActivity extends AppCompatActivity implements LoaderCallbacks<
         providerProd = (TextView) findViewById(R.id.textview_text_provider);
         salesProd = (TextView) findViewById(R.id.sales_product);
         stockProd = (EditText) findViewById(R.id.quantity);
+        amountProd = (TextView) findViewById(R.id.amount_product);
         Button buttonRestar = (Button) findViewById(R.id.restar_stock);
         Button buttonSumar = (Button) findViewById(R.id.sumar_stock);
         imageProd = (ImageView) findViewById(R.id.image_product);
         requestItem = (ImageView) findViewById(R.id.request_item);
-        amountProd = (TextView) findViewById(R.id.amount_product);
+
 
         final Intent intent = getIntent();
         currentProductUri = intent.getData();
@@ -102,8 +103,6 @@ public class StoreActivity extends AppCompatActivity implements LoaderCallbacks<
         if (demand != false) {
             String amount = stockProd.getText().toString();
 
-            // Cree un objeto ContentValues donde los nombres de columna son las claves y los
-            // atributos del producto del editor son los valores.
             ContentValues values = new ContentValues();
             values.put(ProductEntry.COLUMN_QUANTITY_PRODUCT, amount);
 

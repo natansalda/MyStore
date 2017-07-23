@@ -11,27 +11,29 @@
 
         <ImageView
             android:id="@+id/product_image"
-            style="@style/ImageAddProduct" />
-
-        <View
-            android:id="@+id/view_separate"
-            style="@style/ViewFotoEditProduct" />
-
-        <TextView
-            android:id="@+id/text_image_product"
-            style="@style/TextImageProduct" />
+            style="@style/ImageAddProduct"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/instruction_img" />
 
         <TextView
             android:id="@+id/product_name_tv"
-            style="@style/ProductName" />
+            style="@style/ProductName"
+            android:layout_alignBottom="@id/product_image"/>
 
         <EditText
             android:id="@+id/textview_product_name"
-            style="@style/EditNameText" />
+            style="@style/EditNameText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textview_text_price" />
 
         <TextView
             android:id="@+id/product_price"
-            style="@style/ProductPrice" />
+            style="@style/ProductPrice"
+            android:layout_below="@id/product_name_tv"
+            android:layout_alignBaseline="@+id/textview_text_price"
+            android:layout_alignBottom="@+id/textview_text_price"
+            android:layout_alignStart="@+id/product_amount" />
 
         <EditText
             android:id="@+id/textview_text_price"
@@ -39,7 +41,9 @@
 
         <TextView
             android:id="@+id/provider"
-            style="@style/Provider" />
+            style="@style/Provider"
+            android:layout_below="@+id/textview_text_price"
+            android:layout_alignStart="@+id/product_amount" />
 
         <EditText
             android:id="@+id/textview_text_provider"
@@ -47,7 +51,9 @@
 
         <TextView
             android:id="@+id/product_amount"
-            style="@style/Amount" />
+            style="@style/Amount"
+            android:paddingLeft="16dp"
+            android:layout_alignBaseline="@+id/amount" />
 
         <EditText
             android:id="@+id/amount"

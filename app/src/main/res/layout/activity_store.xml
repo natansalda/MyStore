@@ -5,7 +5,7 @@
     <RelativeLayout style="@style/RelativeDefault">
 
         <TextView
-            android:id="@+id/nombre_producto_tv"
+            android:id="@+id/product_name_tv"
             style="@style/TextScreenGallery"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="16dp"
@@ -16,7 +16,7 @@
             style="@style/InfoTextScreenGallery"
             android:layout_marginBottom="9dp"
             android:layout_marginTop="16dp"
-            android:layout_toRightOf="@id/nombre_producto_tv"
+            android:layout_toRightOf="@id/product_name_tv"
             android:textSize="15sp" />
 
         <TextView
@@ -51,10 +51,10 @@
         <TextView
             android:id="@+id/text_view_sale"
             style="@style/TextScreenGallery"
-            android:layout_below="@id/product_price"
-            android:layout_marginTop="10dp"
             android:text="@string/product_sale"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_below="@+id/textview_text_price"
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:id="@+id/sales_product"
@@ -62,10 +62,10 @@
             android:layout_width="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@id/product_price"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="0dp" />
 
         <View
-            android:id="@+id/view_cantidad"
+            android:id="@+id/separator"
             style="@style/ViewAmount" />
 
         <TextView
@@ -75,21 +75,29 @@
         <Button
             android:id="@+id/restar_stock"
             style="@style/AmountButton"
-            android:text="@string/rest" />
+            android:text="@string/rest"
+            android:layout_alignBottom="@+id/view_img_superior"
+            android:layout_alignStart="@+id/separator" />
 
         <Button
             android:id="@+id/sumar_stock"
             style="@style/AmountButton"
-            android:layout_alignParentRight="true"
-            android:text="@string/sum" />
+            android:text="@string/sum"
+            android:layout_above="@+id/view_img_superior"
+            android:layout_alignEnd="@+id/sales_product" />
 
         <EditText
             android:id="@+id/quantity"
-            style="@style/EditTextAmountGallery" />
+            style="@style/EditTextAmountGallery"
+            android:layout_below="@+id/amount_product"
+            android:layout_centerHorizontal="true" />
 
         <ImageView
             android:id="@+id/request_item"
-            style="@style/ProviderIcon" />
+            style="@style/ProviderIcon"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/quantity"
+            android:layout_centerHorizontal="true" />
 
         <View
             android:id="@+id/view_img_superior"
@@ -98,7 +106,9 @@
         <ImageView
             android:id="@+id/image_product"
             style="@style/FotoGalleryForProducts"
-            android:onClick="notifyImageChange" />
+            android:onClick="notifyImageChange"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
 
         <View style="@style/ViewInsideFotoProduct" />
     </RelativeLayout>

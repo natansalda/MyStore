@@ -2,7 +2,6 @@ package pl.nataliana.mystore;
 
 import android.Manifest;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.LoaderManager;
 import android.content.ContentValues;
 import android.content.CursorLoader;
@@ -37,7 +36,7 @@ public class NewProductActivity extends AppCompatActivity
 
     private static final int EXISTING_PRODUCT_LOADER = 0;
     private Uri currentProductUri;
-    private ImageView imageViewP;
+    private ImageView imageView;
     private EditText editTextNameP;
     private EditText editTextPriceP;
     private EditText editTextProvider;
@@ -64,18 +63,16 @@ public class NewProductActivity extends AppCompatActivity
 
         // Binding the views.
         ScrollView scrollview = (ScrollView) findViewById(R.id.scrollview);
-        ImageView imageViewP = (ImageView) findViewById(R.id.product_image);
+        imageView = (ImageView) findViewById(R.id.product_image);
         editTextNameP = (EditText) findViewById(R.id.textview_product_name);
         editTextPriceP = (EditText) findViewById(R.id.textview_text_price);
         editTextProvider = (EditText) findViewById(R.id.textview_text_provider);
         editTextQuantity = (EditText) findViewById(R.id.amount);
-        TextView textImage = (TextView) findViewById(R.id.text_image_product);
         final TextView instruction_img = (TextView) findViewById(R.id.instruction_img);
-        View viewSeparate = (View) findViewById(R.id.view_separate);
 
         scrollview.fullScroll(ScrollView.FOCUS_UP);
 
-        imageViewP.setOnTouchListener(new View.OnTouchListener() {
+        imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 productChange = true;
@@ -89,7 +86,7 @@ public class NewProductActivity extends AppCompatActivity
         editTextQuantity.setOnTouchListener(mTouchListener);
 
         // Photo update listener
-        imageViewP.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 actualizeProductImg(v);
@@ -101,16 +98,12 @@ public class NewProductActivity extends AppCompatActivity
 
         if (currentProductUri == null) {
             setTitle(getString(R.string.title_activity_new_product));
-            textImage.setVisibility(View.VISIBLE);
-            viewSeparate.setVisibility(View.GONE);
             invalidateOptionsMenu();
 
         } else {
             setTitle(getString(R.string.title_activity_modify_product));
-            textImage.setVisibility(View.GONE);
             instruction_img.setVisibility(View.GONE);
             editTextNameP.setHintTextColor(getResources().getColor(R.color.colorHint));
-            viewSeparate.setVisibility(View.VISIBLE);
             getLoaderManager().initLoader(EXISTING_PRODUCT_LOADER, null, this);
         }
     }
@@ -233,7 +226,7 @@ public class NewProductActivity extends AppCompatActivity
             Picasso.with(this).load(mProductPhotoUri)
                     .placeholder(R.drawable.new_image)
                     .fit()
-                    .into(imageViewP);
+                    .into(imageView);
         }
     }
 
@@ -360,7 +353,7 @@ public class NewProductActivity extends AppCompatActivity
             Picasso.with(this).load(currentPhotoUri)
                     .placeholder(R.drawable.new_image)
                     .fit()
-                    .into(imageViewP);
+                    .into(imageView);
         }
     }
 

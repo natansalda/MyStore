@@ -6,7 +6,7 @@
     <TextView
         android:id="@+id/infoTextToast"
         style="@style/ToastSearch"
-        android:text="@string/aviso_mercancia">
+        android:text="@string/notify_goods">
 
     </TextView>
 
