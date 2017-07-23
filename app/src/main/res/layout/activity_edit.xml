@@ -7,24 +7,25 @@
 
         <TextView
             android:id="@+id/instruction_img"
-            style="@style/TextInfoFoto" />
+            style="@style/TextInfoFoto"
+            android:layout_below="@+id/amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
 
         <ImageView
             android:id="@+id/product_image"
             style="@style/ImageAddProduct"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/amount"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/instruction_img" />
+            android:layout_marginTop="83dp" />
 
         <TextView
             android:id="@+id/product_name_tv"
-            style="@style/ProductName"
-            android:layout_alignBottom="@id/product_image"/>
+            style="@style/ProductName" />
 
         <EditText
             android:id="@+id/textview_product_name"
             style="@style/EditNameText"
-            android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/textview_text_price" />
 
         <TextView
