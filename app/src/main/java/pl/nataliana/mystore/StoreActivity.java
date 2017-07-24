@@ -50,7 +50,6 @@ public class StoreActivity extends AppCompatActivity implements LoaderCallbacks<
     private int amount = 0;
     private int clicks = 0;
     private Snackbar snackbar;
-    private Boolean demand = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,40 +93,38 @@ public class StoreActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View v) {
                 showDialogRequestMerchandise();
-                demand = true;
             }
         });
     }
 
     private void ActualiseProductStock() {
-        if (demand != false) {
-            String amount = stockProd.getText().toString();
 
-            ContentValues values = new ContentValues();
-            values.put(ProductEntry.COLUMN_QUANTITY_PRODUCT, amount);
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.toast_sale_msg,
+                (ViewGroup) findViewById(R.id.container_toast_sale));
 
-            if (currentProductUri != null) {
-                int rowUpdated = getContentResolver().update(currentProductUri, values, null, null);
+        //Show toast reminding about writing to provider
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CLIP_HORIZONTAL, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+        String amount = stockProd.getText().toString();
 
-                if (rowUpdated == 0) {
-                    Toast.makeText(this, R.string.error_stock, Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(this, R.string.stock_updated, Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
+        ContentValues values = new ContentValues();
+        values.put(ProductEntry.COLUMN_QUANTITY_PRODUCT, amount);
+
+        if (currentProductUri != null) {
+            int rowUpdated = getContentResolver().update(currentProductUri, values, null, null);
+
+            if (rowUpdated == 0) {
+                Toast.makeText(this, R.string.error_stock, Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(this, R.string.stock_updated, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                finish();
             }
-        } else {
-            LayoutInflater inflater = getLayoutInflater();
-            View layout = inflater.inflate(R.layout.toast_sale_msg,
-                    (ViewGroup) findViewById(R.id.container_toast_sale));
-            //Toast
-            Toast toast = new Toast(getApplicationContext());
-            toast.setGravity(Gravity.CLIP_HORIZONTAL, 0, 0);
-            toast.setDuration(Toast.LENGTH_LONG);
-            toast.setView(layout);
-            toast.show();
         }
     }
 
