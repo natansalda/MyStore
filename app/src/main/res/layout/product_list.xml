@@ -4,6 +4,7 @@
 
     <ImageView
         android:id="@+id/product_foto"
+        android:scaleType="fitCenter"
         style="@style/ImageProductListView" />
 
     <View style="@style/ViewImageListView" />

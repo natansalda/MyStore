@@ -107,6 +107,7 @@
             android:id="@+id/image_product"
             style="@style/FotoGalleryForProducts"
             android:onClick="notifyImageChange"
+            android:scaleType="fitCenter"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />
 
