@@ -1,7 +1,7 @@
 package pl.nataliana.mystore;
 
-import android.app.LoaderManager.LoaderCallbacks;
 import android.app.AlertDialog;
+import android.app.LoaderManager.LoaderCallbacks;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.CursorLoader;

@@ -1,7 +1,5 @@
 package pl.nataliana.mystore;
 
-import android.widget.CursorAdapter;
-
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -11,13 +9,14 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CursorAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import pl.nataliana.mystore.data.ProductContract.ProductEntry;
-
 import com.squareup.picasso.Picasso;
+
+import pl.nataliana.mystore.data.ProductContract.ProductEntry;
 
 public class MyCursorAdapter extends CursorAdapter {
 
