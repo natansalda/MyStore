@@ -14,7 +14,7 @@
     <string name="continue_editing">Continue Editing</string>
     <string name="delete_dialog_msg">Delete this product?</string>
     <string name="cancel">Cancel</string>
-    <string name="ok" translatable="false">Ok</string>
+    <string name="ok" translatable="false">OK</string>
     <string name="product_deleted">Product deleted.</string>
     <string name="error_deleting">Error in deleting product</string>
     <string name="stock_updated">Stock Correctly Updated</string>
