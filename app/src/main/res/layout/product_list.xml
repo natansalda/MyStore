@@ -51,6 +51,7 @@
 
         <ImageView
             android:id="@+id/but_button"
+            android:background="@android:color/white"
             style="@style/ButButton" />
     </RelativeLayout>
 
