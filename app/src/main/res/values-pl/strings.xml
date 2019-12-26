@@ -31,4 +31,23 @@
     <string name="notify_goods">[...]</string>
     <string name="now_in_stock">W magazynie:</string>
     <string name="order_quantity">Ilość zamówiona:</string>
+    <string name="permision">Potrzebujemy pozwolenia aby użyć obrazów na Twoim urządzeniu</string>
+    <string name="precio_producto">Cena produktu:</string>
+    <string name="product">Produkt:</string>
+    <string name="product_deleted">Produkt usunięty</string>
+    <string name="product_name_text">Nazwa produktu:</string>
+    <string name="product_sale">Sprzedaż produktu:</string>
+    <string name="provider">Dostawca:</string>
+    <string name="request_goods">Czy chcesz zamówić towary od tego dostawcy?</string>
+    <string name="stock">Magazyn:</string>
+    <string name="stock_empty">Nie zostało nic w magazynie</string>
+    <string name="stock_updated">Magazyn poprawnie zaktualizowany</string>
+    <string name="text_change_image">[...]</string>
+    <string name="text_empty_view">Magazyn jest pusty, proszę dodaj produkty</string>
+    <string name="texto_imagen_producto">Obrazek produktu</string>
+    <string name="title_activity_add_product">Dodaj produkt</string>
+    <string name="title_activity_modify_product">Modyfikuj dane produktu</string>
+    <string name="title_activity_new_product">Nowy produkt</string>
+    <string name="updated_stock">Pamiętaj aby zapisać magazyn przed wyjściem</string>
+    <string name="yes">Tak</string>
 </resources>
