@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyStore</string>
+    <string name="action_delete">Skasuj</string>
+    <string name="action_modify">Edytuj produkty</string>
+    <string name="action_save">Zapisz</string>
+    <string name="action_share">Udostępnij</string>
+    <string name="activity_new_product">Nowy produkt</string>
+    <string name="activity_store">Magazyn</string>
+    <string name="added">Produkt dodany poprawnie</string>
+    <string name="amount">Ilość:</string>
+    <string name="cancel">Anuluj</string>
+    <string name="continue_editing">Kontynuuj edycję</string>
+    <string name="delete_all">Skasuj wsystko</string>
+    <string name="delete_all_entry">Czy na pewno chcesz skasować wszystkie produkty?</string>
+    <string name="delete_dialog_msg">Usunąć ten produkt?</string>
+    <string name="discard">Anuluj</string>
+    <string name="discard_changes_msg">Anuluj zmiany</string>
+    <string name="dummy_data">Dodaj przykładowe dane</string>
+    <string name="empty_stock">Magazyn jest pusty</string>
+    <string name="error_deleting">Nie udało się usunąć produktu</string>
+    <string name="error_save_changes">Nieudało się zapisac zmian</string>
+    <string name="error_stock">Nie udało się zaktualizować magazynu</string>
+    <string name="hint_precio">1.75zł</string>
+    <string name="info_cambio_foto">Kliknij obrazek by edytować</string>
+    <string name="list_deleted">Cała lista usunięta</string>
+    <string name="missing">Uzupełnij pola przed zapisem</string>
+    <string name="modified">Produkt zmodyfikowany poprawnie</string>
+    <string name="no">Nie</string>
+    <string name="notify_dummy_data">Przykładowy produkt dodany</string>
+    <string name="notify_goods">[...]</string>
+    <string name="now_in_stock">W magazynie:</string>
+    <string name="order_quantity">Ilość zamówiona:</string>
+</resources>
